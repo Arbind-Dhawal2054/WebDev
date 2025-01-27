@@ -1,13 +1,7 @@
 .bag-button{
-  width: 50px;
-  background-color: limegreen;
+  color: blue;
+  background-color: lightgreen;
   border: none;
-  border-radius: 4px;
-}
-
-.wishlist-button{
-  background-color: limegreen;
-  border: none;
-  border-radius: 4px;
-  
-}
+  padding: 10px 25px 10px 25px;
+  border-radius: 15px;
+}  

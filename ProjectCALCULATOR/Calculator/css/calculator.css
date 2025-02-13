@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  height: 100vh; 
+  margin: 0;
+  background-color: #f5f5f5; 
+}
+
+#calc {
+  width: 250px;
+  border: 1px solid rgb(146, 50, 50);
+  border-radius: 5px;
+  padding: 10px;
+  background-color: white; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.display {
+  display: flex;
+  margin: 10px;
+  width: 89%;
+  font-size: 40px;
+  text-align: right;  
+  overflow-x: auto;  
+  white-space: nowrap; 
+}
+
+.button_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.buttons {
+  margin: 3px;
+  width: 50px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+.dark-mode #calc {
+  border-color: white;
+}
+
+.dark-mode .buttons {
+  background-color: #122651;
+  color: white;
+}

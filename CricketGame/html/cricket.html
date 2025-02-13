@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cricket Game</title>
+  <link rel="stylesheet" href="../css/cricket.css">
+</head>
+<body>
+  <h1 class="heading-container">Bat Ball Stump Game</h1>
+  
+  <div class="buttons-container">
+    <button class="buttons" onclick="handleClick('Bat')">Bat</button>
+    <button class="buttons" onclick="handleClick('Ball')">Ball</button>
+    <button class="buttons" onclick="handleClick('Stump')">Stump</button>
+  </div>
+
+  <div id="result-container"></div>
+
+  <div class="scoreboard">
+    <h2>Scoreboard</h2>
+    <p>Wins: <span id="win-count">0</span></p>
+    <p>Losses: <span id="loss-count">0</span></p>
+    <p>Ties: <span id="tie-count">0</span></p>
+    <button class="reset-button" onclick="resetScore()">Reset Score</button>
+  </div>
+
+  <script src="../javascript/cricket.js"></script>
+</body>
+</html>

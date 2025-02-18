@@ -1,9 +1,153 @@
-body{
-    font-family: Arial, Helvetica, sans-serif;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
 }
 
-#main-heading{
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: white;
+    padding: 20px;
+}
 
-text-align: center;
+#main-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+input {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    margin: 8px 5px;
+    width: 250px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+input:focus {
+    outline: none;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.add-buttons {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.add-buttons:hover {
+    background: #e68900;
+    transform: scale(1.1);
+}
+
+.add-buttons:active {
+    transform: scale(0.95);
+}
+
+.todo-list {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+}
+
+.todo-list div {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: fadeInUp 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.todo-list span {
+    font-size: 1rem;
+    flex: 1;
+    margin-right: 10px;
+    word-break: break-word;
+}
+
+.todo-list button {
+    background: #ff4d4d;
+    border: none;
+    padding: 8px 12px;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+}
+
+.todo-list button:hover {
+    background: #e60000;
+    transform: scale(1.1);
+}
+
+.todo-list button:active {
+    transform: scale(0.9);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+        transform: scale(1);
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        width: 90%;
+    }
+
+    .add-buttons {
+        width: 95%;
+    }
+
+    .todo-list {
+        max-width: 90%;
+    }
 }

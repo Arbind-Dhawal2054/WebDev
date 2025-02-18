@@ -11,7 +11,7 @@ function todoInput()
     let dateValue= takeDate.value;
     if(inputValue==='' || dateValue==='')
     {
-        alert("Either Todo or Date is missing!"); // Prevent adding without a date and Todo
+        alert("Either Todo or Date is missing!"); 
         return;
     }
 

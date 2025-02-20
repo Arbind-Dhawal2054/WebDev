@@ -26,7 +26,7 @@
 </head>
 <body>
     
-    <button class="button-container" onclick="setTimeout(buttonClick, 2000)">Click me</button>
+    <button class="button-container">Click me</button>
     <script>
         /* let mul= (num1, num2) => num1*num2;
         let result= console.log(mul(5,3)); */
@@ -39,11 +39,11 @@
         runTwice(greeting);
      */
     
-    
+     let theButton= document.querySelector('.button-container');
+     theButton.addEventListener('click' , event => setTimeout(buttonClick, 2000))
 
      function buttonClick()
      {
-        let theButton= document.querySelector('.button-container');
         theButton.classList.add('js-size-double');
         
     }

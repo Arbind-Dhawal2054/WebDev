@@ -7,8 +7,18 @@
 <body>
     
     <script>
-        let mul= (num1, num2) => num1*num2;
-        let result= console.log(mul(5,3));
+        /* let mul= (num1, num2) => num1*num2;
+        let result= console.log(mul(5,3)); */
+        let greeting= () => console.log("namaste");
+
+        let runTwice = anotherFunction => {
+            anotherFunction();
+            anotherFunction();
+        }
+        runTwice(greeting);
+    
     </script>
+
+   
 </body>
 </html>

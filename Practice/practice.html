@@ -2,21 +2,51 @@
 <html lang="en">
 <head>
     
-    <title>Multiply</title>
+    <title>Practisingy</title>
+    <style>
+        .button-container
+        {
+            font-size: 15px;
+            height: 40px;
+            width: 100px;
+            color: white;
+            background-color: red;
+            border: none;
+            border-radius: 4px;
+
+        }
+        .js-size-double
+        {
+            font-size: 15px;
+            height: 80px;
+            width: 200px;
+        }
+
+    </style>
 </head>
 <body>
     
+    <button class="button-container" onclick="setTimeout(buttonClick, 2000)">Click me</button>
     <script>
         /* let mul= (num1, num2) => num1*num2;
         let result= console.log(mul(5,3)); */
-        let greeting= () => console.log("namaste");
+       /*  let greeting= () => console.log("namaste");
 
         let runTwice = anotherFunction => {
             anotherFunction();
             anotherFunction();
         }
         runTwice(greeting);
+     */
     
+    
+
+     function buttonClick()
+     {
+        let theButton= document.querySelector('.button-container');
+        theButton.classList.add('js-size-double');
+        
+    }
     </script>
 
    

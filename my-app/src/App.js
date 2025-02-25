@@ -5,8 +5,8 @@ import TextForm from './Components/TextForm'
 function App() {
   return (
   <>
-     <Navbar title="TextFun" aboutTextFun="About Us"/> 
-     <div className="container " my-3>
+     <Navbar title="TextFun" aboutTextFun="About Us" /> 
+     <div className="container ">
      <TextForm heading="Enter the text here"/>
      </div>
     

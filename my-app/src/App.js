@@ -1,7 +1,9 @@
 //import './App.css';
 //import Navbar from './Components/Navbar'
 //import TextForm from './Components/TextForm'
-import Textbuttons from './Components/Textbuttons'
+/* import Textbuttons from './Components/Textbuttons'
+ */
+import Doubleform from './Components/Doubleform'
 
 function App() {
   return (
@@ -10,8 +12,14 @@ function App() {
      <div className="container ">
      <TextForm heading="Enter the text here"/>
      </div> */}
-    <div className="container">
+    {/* <div className="container">
       <Textbuttons/>
+    </div> */}
+   {/*  <div className="container my-3">
+    <DynamicGreeting name= "Arbind Ji" />
+    </div> */}
+    <div className="container">
+      <Doubleform/>
     </div>
   </>
   );

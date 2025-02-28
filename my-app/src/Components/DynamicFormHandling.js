@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/* import React, { useState } from 'react';
 
 export default function DynamicFormHandling() {
   const [currentValue, setValue] = useState({
@@ -39,6 +39,7 @@ export default function DynamicFormHandling() {
             placeholder="Username"
             value={currentValue.username}
             onChange={handleInput}
+            autoComplete="current-username"
           />
           <label htmlFor="floatingUsername">Username</label>
         </div>
@@ -57,15 +58,16 @@ export default function DynamicFormHandling() {
         </div>
 
         <div className="form-floating">
-          <input
-            type="password"
-            name="password"
-            className="form-control my-3"
-            id="floatingPassword"
-            placeholder="Password"
-            value={currentValue.password}
+        <input 
+            type="password" 
+            name="password" 
+            className="form-control my-3" 
+            id="floatingPassword" 
+            placeholder="Password" 
+            value={currentValue.password} 
             onChange={handleInput}
-          />
+            autoComplete="current-password"
+        />
           <label htmlFor="floatingPassword">Password</label>
         </div>
 
@@ -90,3 +92,30 @@ export default function DynamicFormHandling() {
     </>
   );
 }
+ */
+
+import React, { useEffect } from 'react';
+import axios from 'axios';
+
+function DynamicFormHandling() {
+  useEffect(() => {
+    // Make an API request to your backend server
+    axios.get('https://studious-space-dollop-695w5r47576wfrwx7-5000.app.github.dev/api')
+  .then(response => {
+    console.log(response.data); // Should log the response from your backend
+  })
+  .catch(error => {
+    console.error('There was an error!', error);
+  });
+
+  }, []);
+
+  return (
+    <div>
+      <h2>Data from Backend</h2>
+      <p>Check the console for the response from the backend.</p>
+    </div>
+  );
+}
+
+export default DynamicFormHandling;

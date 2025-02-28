@@ -3,7 +3,8 @@
 //import TextForm from './Components/TextForm'
 /* import Textbuttons from './Components/Textbuttons'
  */
-import Doubleform from './Components/Doubleform'
+/* import Doubleform from './Components/Doubleform' */
+import DynamicFormHandling from './Components/DynamicFormHandling'
 
 function App() {
   return (
@@ -18,9 +19,16 @@ function App() {
    {/*  <div className="container my-3">
     <DynamicGreeting name= "Arbind Ji" />
     </div> */}
-    <div className="container">
+    {/* <div className="container">
       <Doubleform/>
+    </div> */}
+
+    <div className="container">
+      <DynamicFormHandling/>
     </div>
+
+
+
   </>
   );
 }

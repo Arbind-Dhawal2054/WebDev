@@ -1,4 +1,4 @@
-/* import React, { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function DynamicFormHandling() {
   const [currentValue, setValue] = useState({
@@ -92,9 +92,9 @@ export default function DynamicFormHandling() {
     </>
   );
 }
- */
 
-import React, { useEffect } from 'react';
+
+/* import React, { useEffect } from 'react';
 import axios from 'axios';
 
 function DynamicFormHandling() {
@@ -118,4 +118,4 @@ function DynamicFormHandling() {
   );
 }
 
-export default DynamicFormHandling;
+export default DynamicFormHandling; */

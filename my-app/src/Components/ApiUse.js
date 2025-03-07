@@ -15,7 +15,7 @@ export default function ApiUse() {
         <div className="btn-container my-3">
             <button 
                 className='btn btn-primary'
-                onClick={() =>{ setUser({...user, age: Number(user.age + 1)})}}>
+                onClick={() =>{ setUser({...user, age: Number(user.age) + 1})}}>
                 Increse Age
             </button>
         
